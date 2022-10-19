@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _puts - this function return the legth of a string
+ * _puts - this function return the length of a string
  *
  * @str: value
- *
+ * Return: the number of characters printed to std out
  */
 int _puts(char *str)
 {
