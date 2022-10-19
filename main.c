@@ -8,17 +8,20 @@
  * Return: Always 0
  */
 int main(void)
-{
+{	
     int len;
     int len2;
    
-    _printf("Character:[%c]\n", 'H'); 
     printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
+    _printf("Character:[%c]\n", 'H');
+
     printf("String:[%s]\n", "I am a string !");
-    len = _printf("Percent:[%%]\n");
+    _printf("String:[%s]\n", "I am a string !");
+    
     len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
+    len = _printf("Percent:[%%]\n");
+    
     printf("Len:[%d]\n", len2);
+    printf("Len:[%d]\n", len);   
     return (0);
 }
