@@ -43,5 +43,6 @@ int print_percent(va_list l, flags_t *f)
 {
 	(void)l;
 	(void)f;
-	return (_putchar('%'));
+	_putchar('%');
+	return (1);
 }
