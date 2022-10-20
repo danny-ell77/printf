@@ -1,22 +1,17 @@
 #include "main.h"
+
 /**
- * _puts - this function return the length of a string
+ * _puts - prints a string with newline
+ * @str: the string to print
  *
- * @str: value
- * Return: the number of characters printed to std out
+ * Return:( str-a)
  */
 int _puts(char *str)
 {
-	char n;
-	int i;
+	char *a = str;/*declaration of variables*/
 
-	for (i = 0; (n != '\0'); i++)
-	{
-		n = str[i];
-		if (n != '\0')
-		{
-			_putchar(n);
-		}
-	}
-	return (i);
+	while (*str)
+		_putchar(*str++);
+	return (str - a);
 }
+
